@@ -1,0 +1,6 @@
+- data:
+    env_name: 'dev'
+    env_reg: 'us-east-1'
+    vpc_cidr: '10.1.0.0/16'
+    eks_ver: 1.13
+    sg_ssh: 'Bastion'

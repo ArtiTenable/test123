@@ -1,0 +1,60 @@
+{
+    "intra_subnets": {
+        "sensitive": false,
+        "type": "list",
+        "value": []
+    },
+    "nat_eips_public_ips": {
+        "sensitive": false,
+        "type": "list",
+        "value": [
+            "3.209.231.159",
+            "18.233.228.80",
+            "54.163.2.29"
+        ]
+    },
+    "private_route_table_ids": {
+        "sensitive": false,
+        "type": "list",
+        "value": [
+            "rtb-03a89908e878ff4dc",
+            "rtb-0da20c96b3ab915e4",
+            "rtb-0ec24f0615e83df1e"
+        ]
+    },
+    "private_subnets": {
+        "sensitive": false,
+        "type": "list",
+        "value": [
+            "subnet-05d6f126ab87a684b",
+            "subnet-0e4247986ced1aabb",
+            "subnet-0526536f53e510757"
+        ]
+    },
+    "public_route_table_ids": {
+        "sensitive": false,
+        "type": "list",
+        "value": [
+            "rtb-0f07a5a083dfea530"
+        ]
+    },
+    "public_subnets": {
+        "sensitive": false,
+        "type": "list",
+        "value": [
+            "subnet-05b53f161207229b3",
+            "subnet-09f9575888538eee9",
+            "subnet-04caed2cb971f31b6"
+        ]
+    },
+    "supernet_cidr": {
+        "sensitive": false,
+        "type": "string",
+        "value": "10.1.0.0/16"
+    },
+    "vpc_id": {
+        "sensitive": false,
+        "type": "string",
+        "value": "vpc-0e4507dbd3f1fa065"
+    }
+}

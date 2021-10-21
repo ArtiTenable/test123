@@ -1,0 +1,8 @@
+Prerequisite
+
+terraform --version
+Terraform v0.13.4
+
+terragrunt --version
+terragrunt version v0.23.12
+

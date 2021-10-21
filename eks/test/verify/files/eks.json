@@ -1,0 +1,27 @@
+{
+    "Instructions": {
+        "sensitive": false,
+        "type": "string",
+        "value": "This module outputs a few handy files for you to use. If you look in /tmp/ENVIRONMENT/ you will see some templated yaml files to help initialize k8s. Also in this directory is a script to help with all the required setup called k8s-init.sh in /tmp/ENVIRONMENT/scripts/"
+    },
+    "alb_security_group_id": {
+        "sensitive": false,
+        "type": "string",
+        "value": "sg-06c4e7b01a2192a81"
+    },
+    "kube2iam_iam_role_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:iam::707026380822:role/dev-us-east-1--kube2iam20190524192953240400000002"
+    },
+    "kube2iam_policy": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:iam::707026380822:policy/eks-worker-kube2iam-dev-us-east-1-eks20190321203918885100000007"
+    },
+    "worker_iam_role_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:iam::707026380822:role/dev-us-east-1-eks20190321203918880200000005"
+    }
+}

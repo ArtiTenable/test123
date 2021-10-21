@@ -1,0 +1,10 @@
+name: Networking
+title: InSpec Profile to verify TG Networking provisioning
+maintainer: AA CloudOps
+copyright: AA CloudOps
+copyright_email: cloudops@automationanywhere.com
+license: Apache-2.0
+summary: An InSpec test profile to verify TG networking setups
+version: 0.1.0
+supports:
+  - platform: aws

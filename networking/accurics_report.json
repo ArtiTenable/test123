@@ -1,0 +1,123 @@
+{
+  "scanId": "ab44cd5d-0a79-47c8-b088-fec09c05a141",
+  "envId": "c1d35e9e-ab7a-464e-acba-0952546fd370",
+  "envName": "Terragrunt",
+  "summary": {
+    "resources": 51,
+    "violation": 4,
+    "high": 0,
+    "medium": 0,
+    "low": 4,
+    "native": 4,
+    "inherit": 0
+  },
+  "enforcingModeSummary": {
+    "violation": 0,
+    "low": 0,
+    "medium": 0,
+    "high": 0
+  },
+  "violations": [
+    {
+      "type": "aws_security_group",
+      "id": "networking.module.vpc.aws_security_group.vpc_endpoint",
+      "name": "vpc_endpoint",
+      "source": "https://bitbucket.org/accurics/accurics-terragrunt-sample.git/networking/unknown",
+      "rule": "networkPort443ExposedToprivate_13102021",
+      "vulnerability": "Security Groups Unrestricted Specific Ports https (TCP,443) is exposed to private hosts more than 32.",
+      "remediation": "In AWS Console - \n 1. Sign in the AWS Console and go to the Amazon VPC console.\n 2. In the navigation pane, select Security Groups.\n 3. For each security group, perform the following actions:\n      a) Select the security group.\n      b) Select the Inbound Rules.\n      c) Identify the rules to be removed.\n      d) Remove the .\n 4. Click Save.",
+      "severity": "LOW",
+      "inference": "native",
+      "policyName": "Accurics Security Best Practices for AWS v2",
+      "ruleDisplayName": "Ensure Security Groups Unrestricted Specific Ports https (TCP,443) is not exposed to private hosts more than 32",
+      "policyMode": "Regular"
+    }, 
+    {
+      "type": "aws_security_group_rule",
+      "id": "networking.module.vpc.aws_security_group_rule.vpc_endpoint_ingress",
+      "name": "vpc_endpoint_ingress",
+      "source": "https://bitbucket.org/accurics/accurics-terragrunt-sample.git/networking/unknown",
+      "rule": "networkPort443ExposedToprivate_13102021",
+      "vulnerability": "Security Groups Unrestricted Specific Ports https (TCP,443) is exposed to private hosts more than 32.",
+      "remediation": "In AWS Console - \n 1. Sign in the AWS Console and go to the Amazon VPC console.\n 2. In the navigation pane, select Security Groups.\n 3. For each security group, perform the following actions:\n      a) Select the security group.\n      b) Select the Inbound Rules.\n      c) Identify the rules to be removed.\n      d) Remove the .\n 4. Click Save.",
+      "severity": "LOW",
+      "inference": "native",
+      "policyName": "Accurics Security Best Practices for AWS v2",
+      "ruleDisplayName": "Ensure Security Groups Unrestricted Specific Ports https (TCP,443) is not exposed to private hosts more than 32",
+      "policyMode": "Regular"
+    }, 
+    {
+      "type": "aws_vpc",
+      "id": "networking.module.vpc.aws_vpc.this[0]",
+      "name": "this",
+      "source": "https://bitbucket.org/accurics/accurics-terragrunt-sample.git/networking/unknown",
+      "rule": "vpcFlowLogsNotEnabled_13102021",
+      "vulnerability": "VPC flow logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC.",
+      "remediation": "\n In AWS Console - \n 1. Sign in to the AWS Console and go to the VPC dashboard.\n 2. In the navigation pane, select a VPC.\n 3. Select the Flow Logs tab.\n 4. If no Flow Log exists, select Create Flow Log.\n 5. Set the filter to Reject.\n 6. Enter a Role and Destination Log Group.\n 7. Select Create Log Flow.\n 8. Select a CloudWatch Logs Group.",
+      "severity": "LOW",
+      "inference": "native",
+      "policyName": "Accurics Security Best Practices for AWS v2",
+      "ruleDisplayName": "Ensure VPC flow logging is enabled for all AWS VPCs",
+      "policyMode": "Regular"
+    }, 
+    {
+      "type": "aws_security_group",
+      "id": "networking.aws_security_group.http",
+      "name": "http",
+      "source": "https://bitbucket.org/accurics/accurics-terragrunt-sample.git/networking/unknown",
+      "rule": "networkPort80ExposedToprivate_13102021",
+      "vulnerability": "Security Groups Unrestricted Specific Ports http (TCP,80) is exposed to private hosts more than 32.",
+      "remediation": "In AWS Console - \n 1. Sign in the AWS Console and go to the Amazon VPC console.\n 2. In the navigation pane, select Security Groups.\n 3. For each security group, perform the following actions:\n      a) Select the security group.\n      b) Select the Inbound Rules.\n      c) Identify the rules to be removed.\n      d) Remove the .\n 4. Click Save.",
+      "severity": "LOW",
+      "inference": "native",
+      "policyName": "Accurics Security Best Practices for AWS v2",
+      "ruleDisplayName": "Ensure Security Groups Unrestricted Specific Ports http (TCP,80) is not exposed to private hosts more than 32",
+      "policyMode": "Regular"
+    }, 
+    {
+      "type": "aws_security_group",
+      "id": "networking.aws_security_group.ssh",
+      "name": "ssh",
+      "source": "https://bitbucket.org/accurics/accurics-terragrunt-sample.git/networking/unknown",
+      "rule": "networkPort22ExposedToprivate_13102021",
+      "vulnerability": "Security Groups Unrestricted Specific Ports SSH (TCP,22) is exposed to private hosts more than 32.",
+      "remediation": "In AWS Console - \n 1. Sign in the AWS Console and go to the Amazon VPC console.\n 2. In the navigation pane, select Security Groups.\n 3. For each security group, perform the following actions:\n      a) Select the security group.\n      b) Select the Inbound Rules.\n      c) Identify the rules to be removed.\n      d) Remove the .\n 4. Click Save.",
+      "severity": "LOW",
+      "inference": "native",
+      "policyName": "Accurics Security Best Practices for AWS v2",
+      "ruleDisplayName": "Ensure Security Groups Unrestricted Specific Ports SSH (TCP,22) is not exposed to private hosts more than 32",
+      "policyMode": "Regular"
+    }, 
+    {
+      "type": "aws_security_group_rule",
+      "id": "networking.aws_security_group_rule.http_ingress",
+      "name": "http_ingress",
+      "source": "https://bitbucket.org/accurics/accurics-terragrunt-sample.git/networking/unknown",
+      "rule": "networkPort80ExposedToprivate_13102021",
+      "vulnerability": "Security Groups Unrestricted Specific Ports http (TCP,80) is exposed to private hosts more than 32.",
+      "remediation": "In AWS Console - \n 1. Sign in the AWS Console and go to the Amazon VPC console.\n 2. In the navigation pane, select Security Groups.\n 3. For each security group, perform the following actions:\n      a) Select the security group.\n      b) Select the Inbound Rules.\n      c) Identify the rules to be removed.\n      d) Remove the .\n 4. Click Save.",
+      "severity": "LOW",
+      "inference": "native",
+      "policyName": "Accurics Security Best Practices for AWS v2",
+      "ruleDisplayName": "Ensure Security Groups Unrestricted Specific Ports http (TCP,80) is not exposed to private hosts more than 32",
+      "policyMode": "Regular"
+    }, 
+    {
+      "type": "aws_security_group_rule",
+      "id": "networking.aws_security_group_rule.ssh_ingress",
+      "name": "ssh_ingress",
+      "source": "https://bitbucket.org/accurics/accurics-terragrunt-sample.git/networking/unknown",
+      "rule": "networkPort22ExposedToprivate_13102021",
+      "vulnerability": "Security Groups Unrestricted Specific Ports SSH (TCP,22) is exposed to private hosts more than 32.",
+      "remediation": "In AWS Console - \n 1. Sign in the AWS Console and go to the Amazon VPC console.\n 2. In the navigation pane, select Security Groups.\n 3. For each security group, perform the following actions:\n      a) Select the security group.\n      b) Select the Inbound Rules.\n      c) Identify the rules to be removed.\n      d) Remove the .\n 4. Click Save.",
+      "severity": "LOW",
+      "inference": "native",
+      "policyName": "Accurics Security Best Practices for AWS v2",
+      "ruleDisplayName": "Ensure Security Groups Unrestricted Specific Ports SSH (TCP,22) is not exposed to private hosts more than 32",
+      "policyMode": "Regular"
+    }
+  ],
+  "HasErrors": false,
+  "current_repo_violations": null,
+  "current_repo_summary": null
+}
